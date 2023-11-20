@@ -5,7 +5,7 @@ import { montserrat } from '@/public/fonts/fonts';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer}> 
       <div className={`${styles.footer__block} ${styles.footer__information}`}>
         <h3 className={styles.footer__title}>О компании</h3>
         <ul className={styles.footer__list}>
