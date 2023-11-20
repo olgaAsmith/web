@@ -1,0 +1,9 @@
+@import '../public/utils/mixins.scss';
+
+.main {
+  @include tablet {
+    background-image: url('../public/images/bg-mini.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

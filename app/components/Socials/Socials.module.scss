@@ -1,0 +1,35 @@
+@import '../../../public/utils/mixins.scss';
+
+.socials {
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+  @include tablet {
+    justify-content: center;
+  }
+  @include tablet {
+    justify-content: start;
+  }
+
+  &__link {
+    width: 20px;
+    height: 19px;
+    display: block;
+    @include phone {
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__link_tg {
+    background-image: url('../../../public/images/telegram.svg');
+  }
+  &__link_viber {
+    background-image: url('../../../public/images/viber.svg');
+  }
+  &__link_whatsapp {
+    background-image: url('../../../public/images/whatsapp.svg');
+  }
+}

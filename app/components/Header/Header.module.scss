@@ -1,0 +1,45 @@
+@import '../../../public/utils/mixins.scss';
+
+.header {
+  width: 100%;
+  display: flex;
+  padding-top: 57px;
+  @include desktop {
+    justify-content: space-between;
+  }
+  @include tablet {
+    background-color: #0e1014;
+    padding: 20px 0;
+  }
+
+  &__info {
+    width: 165px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 27px;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__title {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: normal;
+  }
+  &__contacts {
+    display: flex;
+    gap: 47px;
+    margin-left: auto;
+    @include desktopXL {
+      flex-direction: column;
+      gap: 10px;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &__tel {
+    font-weight: 500;
+  }
+}
